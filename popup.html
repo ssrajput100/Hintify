@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simran's LeetCode Buddy</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      background: linear-gradient(135deg, #FFE5F1, #FFD1DC);
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #FF69B4;
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .problem-header {
+      background: rgba(255, 105, 180, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .problem-label {
+      color: #FF69B4;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    #problemName {
+      color: #FF1493;
+      font-weight: bold;
+      display: inline;
+    }
+    .hint-container {
+      margin: 15px 0;
+    }
+    .hint {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #FFD1DC;
+    }
+    .hint-number {
+      color: #FF69B4;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    #nextHintBtn {
+      background: #FF69B4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    #nextHintBtn:hover {
+      background: #FF1493;
+    }
+    #nextHintBtn:disabled {
+      background: #FFB6C1;
+      cursor: not-allowed;
+    }
+    #loading {
+      color: #FF69B4;
+      text-align: center;
+      display: none;
+    }
+    .error {
+      color: #FF0000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simran's LeetCode Buddy</h1>
+    <div class="problem-header">
+      <span class="problem-label">Problem Detected:</span>
+      <div id="problemName"></div>
+    </div>
+    <div id="loading">Getting hints...</div>
+    <div id="hintsContainer" class="hint-container"></div>
+    <button id="nextHintBtn" style="display: none;">Next Hint</button>
+    <div id="error" class="error"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
