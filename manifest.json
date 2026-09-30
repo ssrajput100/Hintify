@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Simran's LeetCode Buddy",
+  "version": "1.0",
+  "description": "Get helpful step-by-step clues for LeetCode problems",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*"
+  ]
+}
