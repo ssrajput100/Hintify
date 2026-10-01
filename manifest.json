@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Simran's LeetCode Buddy",
+  "name": "Hintify",
   "version": "1.0",
   "description": "Get helpful step-by-step clues for LeetCode problems",
   "action": {
